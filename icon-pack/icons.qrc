@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>settings.ico</file>
+    <file>complited.ico</file>
+    <file>loader.ico</file>
+  </qresource>
+</RCC>

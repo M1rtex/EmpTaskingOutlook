@@ -1,0 +1,21 @@
+cd C:\Users\M1rtex-WIN10\AppData\Roaming\Python\Python37\Scripts
+
+# pyside2-uic.exe E:\projects\Thunderbird\senior_app.ui -o E:\projects\Thunderbird\senior_app.py
+
+pyside2-uic E:\projects\Thunderbird\ui_files\senior_app.ui -o E:\projects\Thunderbird\components\senior_app.py
+
+pyside2-uic E:\projects\Thunderbird\ui_files\select_project.ui -o E:\projects\Thunderbird\components\select_project.py
+
+pyside2-uic E:\projects\Thunderbird\ui_files\select_staff.ui -o E:\projects\Thunderbird\components\select_staff.py
+
+pyside2-uic E:\projects\Thunderbird\ui_files\select_task.ui -o E:\projects\Thunderbird\components\select_task.py
+
+pyside2-uic E:\projects\Thunderbird\ui_files\log_in.ui -o E:\projects\Thunderbird\components\log_in.py
+
+# pyside2-rcc.exe E:\projects\Thunderbird\icon-pack\icons.qrc -o E:\projects\Thunderbird\icons.py
+
+pyside2-rcc E:\projects\Thunderbird\icon-pack\icons.qrc -o E:\projects\Thunderbird\components\icons.py
+
+pyinstaller -w -F --icon=E:\projects\Thunderbird\main_app_icon.ico app.py
+
+pyinstaller --name="Employee tasking program" -F --uac-admin --windowed app.py
